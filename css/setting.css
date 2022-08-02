@@ -54,6 +54,15 @@
     color: #000f9f;
     background-color: transparent;
     border: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: -.5px;
+}
+
+.view_more > button:hover {
+    letter-spacing: 0;
 }
 
 .view_more > button > img {
@@ -61,6 +70,14 @@
     max-width: 100%;
     vertical-align: middle;
     margin-right: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.view_more > button:hover > img {
+    margin-right: 15px;
 }
 
 .view_close_btn {
@@ -270,7 +287,7 @@
 
 @media all and (max-width: 1025px) {
     .slider_arrows {
-        top: 372px;
+        top: 670px;
         right: 10px;
         -webkit-transform: none;
         -moz-transform: none;
@@ -312,6 +329,10 @@
 }
 
 @media all and (max-width: 886px) {
+    .slider_arrows {
+        top: 601px;
+    }
+
     .author_arrows > li.prev_arrows,
     .publish_arrows > li.prev_arrows {
         left: 30px;
@@ -352,11 +373,40 @@
 @media all and (max-width: 481px) {
     .author_arrows,
     .publish_arrows {
-        display: none;
+        width: 100%;
+        height: 40px;
+        top: auto !important;
+        bottom: 20px !important;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .author_arrows > li.prev_arrows,
+    .publish_arrows > li.prev_arrows {
+        left: auto !important;
+        right: auto !important;
+        position: relative;
+        margin: 0 10px;
+    }
+
+    .author_arrows > li.next_arrows,
+    .publish_arrows > li.next_arrows {
+        left: auto !important;
+        right: auto !important;
+        position: relative;
+        margin: 0 10px;
     }
 
     .slider_arrows {
-        top: 262px;
+        top: 362px;
     }
 
     .slider_arrows > li {
@@ -371,6 +421,12 @@
     .slider_arrows > li > button {
         -webkit-background-size: 9px 9px;
         background-size: 9px;
+    }
+}
+
+@media all and (max-width: 376px) {
+    .slider_arrows {
+        top: 303px;
     }
 }
 
