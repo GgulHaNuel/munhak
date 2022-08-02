@@ -42,20 +42,20 @@ $(function () {
             $(".main_network_txt").hide();
             $("#sec4_view_txt").fadeIn();
             $(".network_img_01").hide();
-            $(".network_img_02").fadeIn();
+            $(".network_img_02").show();
         });
 
         $("#sec2_close_btn").click(function () {
             $("#sec2_view_txt").hide();
             $("#sec2_view_btn").fadeIn();
-            $(".main_authors_txt").fadeIn();
+            $(".main_authors_txt").fadeIn(500);
         });
 
         $("#sec4_close_btn").click(function () {
             $("#sec4_view_txt").hide();
             $("#sec4_view_btn").fadeIn();
             $(".main_network_txt").fadeIn();
-            $(".network_img_01").fadeIn();
+            $(".network_img_01").show();
             $(".network_img_02").hide();
         });
     }
@@ -88,22 +88,50 @@ $(function () {
         responsiveWidth: 1025,
         onLeave: function () {
             $('.section [data-aos]').removeClass("aos-animate");
+            $("#sec2_view_txt").hide();
+            $("#sec2_view_btn").fadeIn();
+            $(".main_authors_txt").fadeIn();
+            $("#sec4_view_txt").hide();
+            $("#sec4_view_btn").fadeIn();
+            $(".main_network_txt").fadeIn();
+            $(".network_img_01").fadeIn();
+            $(".network_img_02").hide();
         },
         onSlideLeave: function () {
             $('.slide [data-aos]').removeClass("aos-animate");
+            $("#sec2_view_txt").hide();
+            $("#sec2_view_btn").fadeIn();
+            $(".main_authors_txt").fadeIn();
+            $("#sec4_view_txt").hide();
+            $("#sec4_view_btn").fadeIn();
+            $(".main_network_txt").fadeIn();
+            $(".network_img_01").fadeIn();
+            $(".network_img_02").hide();
         },
         afterSlideLoad: function () {
             $('.slide.active [data-aos]').addClass("aos-animate");
+            $(".munhak_sliders").slick("slickPlay");
         },
-        afterLoad: function () {
+        afterLoad: function (anchorLink, index) {
             $('.section.active [data-aos]').addClass("aos-animate");
+            if(index == 6){
+                $(".munhak_sliders").slick("slickPlay");
+            }else if(index == 8){
+                $("#publish_sliders").slick("slickPlay");
+            }else if(index == 10){
+                $("#author_sliders").slick("slickPlay");
+            }else {
+                $(".munhak_sliders").slick("slickPause");
+                $("#publish_sliders").slick("slickPause");
+                $("#author_sliders").slick("slickPause");
+            }
         }
     });
 
     function MUNHAK_SLIDER() {
         $(".munhak_sliders").slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             speed: 600,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -117,8 +145,7 @@ $(function () {
                 {
                     breakpoint: 1025,
                     settings: {
-                        arrows: false,
-                        adaptiveHeight: true
+                        arrows: false
                     }
                 }
             ]
@@ -129,7 +156,7 @@ $(function () {
     function PUBLISH_SLIDER() {
         $("#publish_sliders").slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             speed: 600,
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -152,9 +179,7 @@ $(function () {
                     settings: {
                         arrows: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1,
-                        adaptiveHeight: true,
-                        dots: false,
+                        slidesToScroll: 1
                     }
                 }
             ]
@@ -165,7 +190,7 @@ $(function () {
     function AUTHOR_SLIDER() {
         $("#author_sliders").slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             speed: 600,
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -188,9 +213,7 @@ $(function () {
                     settings: {
                         arrows: true,
                         slidesToShow: 1,
-                        slidesToScroll: 1,
-                        adaptiveHeight: true,
-                        dots: false,
+                        slidesToScroll: 1
                     }
                 }
             ]
