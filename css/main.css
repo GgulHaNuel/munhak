@@ -24,6 +24,20 @@
     transition: opacity 0.5s;
 }
 
+.sc_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/bg_00.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 #new_sc .sc_con.start {
     opacity: 1;
 }
@@ -175,7 +189,7 @@
 .sec_0 .info_con .info_txt > h2 {
     font-family: 'Noto Sans KR';
     font-size: 3.0625rem;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     font-weight: 700;
     color: #000f9f;
     margin-bottom: 10px;
@@ -306,7 +320,7 @@
 .sec_0 .info_brand_list > li > h3 {
     font-size: 1.0625rem;
     font-weight: 800;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     color: #000f9f;
     margin-bottom: 8px;
 }
@@ -316,7 +330,7 @@
     font-weight: 300;
     line-height: 17px;
     color: #000;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
 }
 
 @media all and (max-width: 1441px) {
@@ -535,7 +549,7 @@
     font-size: 2.9375rem;
     font-weight: 700;
     color: #000f9f;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 20px;
 }
 
@@ -555,7 +569,7 @@
     font-weight: 400;
     color: #000;
     margin-bottom: 10px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 25px;
 }
 
@@ -580,7 +594,7 @@
     font-size: 0.9375rem;
     font-weight: 300;
     margin-bottom: 15px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 23px;
 }
 
@@ -589,7 +603,7 @@
     max-width: 440px;
     height: 697px;
     position: relative;
-    background-image: url("../img/about_img.png");
+    background-image: url('../img/about_img.png');
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -821,7 +835,7 @@
     font-size: 2.9375rem;
     font-weight: 700;
     color: #000f9f;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 20px;
 }
 
@@ -854,7 +868,7 @@
     font-weight: 300;
     color: #000;
     margin-bottom: 15px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 23px;
 }
 
@@ -891,7 +905,7 @@
     font-size: 0.9375rem;
     font-weight: 300;
     color: #000;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 25px;
     margin-bottom: 30px;
 }
@@ -1073,7 +1087,7 @@
     font-size: 2.9375rem;
     font-weight: 700;
     color: #000f9f;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
 }
 
 .sec_3 .bestsell_book_con {
@@ -1157,7 +1171,7 @@
     font-size: 0.9375rem;
     font-weight: 400;
     color: #000;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 5px;
     white-space: nowrap;
 }
@@ -1348,7 +1362,7 @@
     font-size: 2.9375rem;
     font-weight: 700;
     color: #fff;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 20px;
 }
 
@@ -1375,7 +1389,7 @@
     font-weight: 300;
     color: #000;
     margin-bottom: 15px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 23px;
 }
 
@@ -1421,7 +1435,7 @@
     font-size: 0.9375rem;
     font-weight: 300;
     color: #000;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     line-height: 23px;
     margin-bottom: 20px;
 }
@@ -1750,15 +1764,15 @@
 }
 
 .sec_5 .munhak_slider_box .munhak_sliders .slide_box.slide_01 .slide_img {
-    background-image: url("../img/munhak_slide_01.png");
+    background-image: url('../img/munhak_slide_01.png');
 }
 
 .sec_5 .munhak_slider_box .munhak_sliders .slide_box.slide_02 .slide_img {
-    background-image: url("../img/munhak_slide_02.png");
+    background-image: url('../img/munhak_slide_02.png');
 }
 
 .sec_5 .munhak_slider_box .munhak_sliders .slide_box.slide_03 .slide_img {
-    background-image: url("../img/munhak_slide_03.png");
+    background-image: url('../img/munhak_slide_03.png');
 }
 
 .sec_5 .munhak_slider_box .munhak_sliders .slide_box .slide_txt {
@@ -1799,7 +1813,7 @@
     font-weight: 700;
     color: #fff;
     display: inline-block;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 25px;
     -webkit-animation: fadeOutLeft 1s both;
     -moz-animation: fadeOutLeft 1s both;
@@ -1835,7 +1849,7 @@
     font-size: 0.9375rem;
     font-weight: 300;
     line-height: 25px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     word-break: keep-all;
     -webkit-animation: fadeOutLeft 1s both;
     -moz-animation: fadeOutLeft 1s both;
@@ -2084,7 +2098,7 @@
     width: 620px;
     height: 620px;
     position: relative;
-    background-image: url("../img/collect_img.png");
+    background-image: url('../img/collect_img.png');
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -2122,7 +2136,7 @@
     font-weight: 700;
     color: #fff;
     display: inline-block;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 25px;
 }
 
@@ -2137,7 +2151,7 @@
     font-size: 0.9375rem;
     font-weight: 300;
     line-height: 25px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     word-break: keep-all;
     padding-left: 5px;
 }
@@ -2267,7 +2281,7 @@
     font-size: 2.9375rem;
     font-weight: 700;
     color: #000f9f;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
 }
 
 .publish_slider_box {
@@ -2424,7 +2438,7 @@
 
 .publish_slider_box .publish_sliders .slide_box .border_box .profile_book_list > li > p > span {
     font-size: 0.75rem;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
 }
 
 .publish_slider_box .publish_sliders .slick-dots {
@@ -2668,7 +2682,7 @@
     width: 620px;
     height: 620px;
     position: relative;
-    background-image: url("../img/classic_img.png");
+    background-image: url('../img/classic_img.png');
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -2706,7 +2720,7 @@
     font-weight: 700;
     color: #fff;
     display: inline-block;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     margin-bottom: 25px;
 }
 
@@ -2721,7 +2735,7 @@
     font-size: 0.9375rem;
     font-weight: 300;
     line-height: 25px;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     word-break: keep-all;
     padding-left: 5px;
 }
@@ -2851,7 +2865,7 @@
     font-size: 2.9375rem;
     font-weight: 700;
     color: #000f9f;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
 }
 
 .sec_9 .publish_slider_box .publish_sliders .slide_box .border_box {
@@ -2987,7 +3001,8 @@
     }
 }
 
-@media all and (max-width: 886px) {}
+@media all and (max-width: 886px) {
+}
 
 @media all and (max-width: 621px) {
     .sec_cont_size.sec_cont_09 {
@@ -3125,7 +3140,7 @@
     width: 22px;
     height: 22px;
     margin-left: 15px;
-    background-image: url("../img/down_icon.png");
+    background-image: url('../img/down_icon.png');
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -3142,7 +3157,7 @@
 }
 
 .sec_10 .pdf_con .down_list > li > a:hover > span {
-    background-image: url("../img/down_icon_on.png");
+    background-image: url('../img/down_icon_on.png');
 }
 
 @media all and (max-width: 1441px) {
