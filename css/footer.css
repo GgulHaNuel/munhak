@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
+/* FOOTER */
 #new_ft {
     width: 100%;
     height: auto;
     position: relative;
-    background-color: #F1F0F0;
+    background-color: #181818;
+    border-top: 1px solid #3a3a3a;
 }
 
 #new_ft .ft_area {
@@ -17,7 +19,45 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 25px 30px;
+}
+
+#new_ft .ft_container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    padding: 54px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 1281px) {
+    #new_ft .ft_container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* FOOTER END */
+
+/* FOOTER LT */
+#new_ft .ft_lt {
+    width: auto;
+    height: auto;
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -28,67 +68,247 @@
     -moz-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
 }
 
-#new_ft .ft_con .ft_logo {
-    width: 309px;
-    height: 36px;
-    background-image: url("../img/ft_logo.svg");
+/* FOOTER LOGO */
+#new_ft .ft_logo {
+    width: 219px;
+    max-width: 100%;
+    height: 25px;
+    position: relative;
+    margin-right: 166px;
+}
+
+#new_ft .ft_logo > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(../img/ft_logo.png);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#new_ft .ft_logo > a:hover {
+    background-image: url(../img/ft_logo_on.png);
+}
+
+/* FOOTER LOGO END */
+
+/* FOOTER TXT */
+#new_ft .ft_stat {
+    width: auto;
+    height: auto;
     position: relative;
-    margin-right: 60px;
 }
 
-#new_ft .ft_con .ft_logo::after {
-    content: '';
-    width: 1px;
-    height: 20px;
-    background-color: #B9B8B8;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: -30px;
+#new_ft .ft_stat .ft_stat_box {
+    width: auto;
+    height: auto;
+    position: relative;
 }
 
-#new_ft .ft_con > p {
+#new_ft .ft_stat .ft_stat_box > li {
+    margin-bottom: 5px;
+    gap: 20px;
+}
+
+#new_ft .ft_stat .ft_stat_box > li:last-of-type {
+    margin-bottom: 0;
+}
+
+#new_ft .ft_stat .ft_stat_box > li,
+#new_ft .ft_stat .ft_stat_box > li > span {
     font-size: 0.875rem;
     font-weight: 400;
-    color: #818181;
-    letter-spacing: -.5px;
+    color: #cecece;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
     line-height: 23px;
 }
 
-@media all and (max-width: 886px) {
-    #new_ft .ft_con {
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
+#new_ft .ft_stat .ft_stat_box > li > span::before {
+    content: '';
+    width: 1px;
+    height: 14px;
+    background-color: #696969;
+    position: absolute;
+    right: -10px;
+}
 
-    #new_ft .ft_con .ft_logo {
-        padding-right: 0;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+#new_ft .ft_stat .ft_stat_box > li > span:last-of-type::before {
+    content: none;
+}
+/* FOOTER TXT END */
+/* FOOTER LT END */
 
-    #new_ft .ft_con .ft_logo::after {
-        content: none;
-    }
+/* FOOTER TERMS */
+#new_ft .ft_terms {
+    width: auto;
+    height: auto;
+    position: relative;
+}
 
-    #new_ft .ft_con > p {
+#new_ft .ft_terms2 {
+    display: none;
+}
+
+#new_ft .ft_terms .ft_terms_box {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#new_ft .ft_terms .ft_terms_box > li {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#new_ft .ft_terms .ft_terms_box > li::before {
+    content: '';
+    width: 1px;
+    height: 14px;
+    background-color: #696969;
+    position: absolute;
+    right: -10px;
+    top: 4px;
+}
+
+#new_ft .ft_terms .ft_terms_box > li:last-of-type::before {
+    content: none;
+}
+
+#new_ft .ft_terms .ft_terms_box > li > a {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#new_ft .ft_terms .ft_terms_box > li > a:hover {
+    background-color: #6343f5;
+    padding: 0 10px;
+}
+
+@media all and (max-width: 1025px) {
+    #new_ft .ft_lt {
         width: 100%;
-        text-align: center;
+        display: block;
+    }
+
+    #new_ft .ft_logo {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    #new_ft .ft_terms {
+        display: none;
+    }
+
+    #new_ft .ft_terms2 {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #new_ft .ft_terms .ft_terms_box {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li,
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
+
+@media all and (max-width: 481px) {
+    #new_ft .ft_container {
+        padding: 40px 15px;
+    }
+
+    #new_ft .ft_logo {
+        width: 180px;
+        margin: 0 0 20px 0;
+    }
+
+    #new_ft .ft_terms .ft_terms_box {
+        -webkit-box-pack: left;
+        -webkit-justify-content: left;
+        -moz-box-pack: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+    }
+
+    #new_ft .ft_terms .ft_terms_box > li::before {
+        top: 2px;
+    }
+
+    #new_ft .ft_terms .ft_terms_box > li > a {
+        font-size: 0.8125rem;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li,
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        display: inline-block;
+        font-size: 0.8125rem;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        margin-right: 20px;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li > span::before {
+        content: none;
+    }
+}
+
+@media all and (max-width: 376px) {
+    #new_ft .ft_terms .ft_terms_box > li > a {
+        font-size: 0.75rem;
+    }
+
+    #new_ft .ft_stat .ft_stat_box > li,
+    #new_ft .ft_stat .ft_stat_box > li > span {
+        font-size: 0.75rem;
+        word-break: keep-all;
+    }
+}
+
+/* FOOTER TERMS END */

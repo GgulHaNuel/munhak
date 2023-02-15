@@ -25,15 +25,18 @@ body {
     width: 100%;
     height: auto;
     font-size: 16px;
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'Montserrat', 'Pretendard', sans-serif;
     font-weight: 400;
+    background-color: #262626;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p,
+span {
     font-size: 1rem;
     font-weight: 400;
     color: #333;
@@ -52,7 +55,7 @@ ul {
 
 input {
     font-family: 'Pretendard', sans-serif;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 400;
     color: #333;
 }
@@ -68,49 +71,49 @@ input {
 
 input::-webkit-input-placeholder {
     font-size: 0.875rem;
-    font-weight: 300;
-    color: #c3c3c3;
+    font-weight: 400;
+    color: #333;
 }
 
 input:-moz-placeholder {
     font-size: 0.875rem;
-    font-weight: 300;
-    color: #c3c3c3;
+    font-weight: 400;
+    color: #333;
 }
 
 input::-moz-placeholder {
     font-size: 0.875rem;
-    font-weight: 300;
-    color: #c3c3c3;
+    font-weight: 400;
+    color: #333;
 }
 
 input:-ms-input-placeholder {
     font-size: 0.875rem;
-    font-weight: 300;
-    color: #c3c3c3;
+    font-weight: 400;
+    color: #333;
 }
 
 input::-ms-input-placeholder {
     font-size: 0.875rem;
-    font-weight: 300;
-    color: #c3c3c3;
+    font-weight: 400;
+    color: #333;
 }
 
 input::placeholder {
     font-size: 0.875rem;
-    font-weight: 300;
-    color: #c3c3c3;
+    font-weight: 400;
+    color: #333;
 }
 
 button {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 400;
     font-family: 'Pretendard', sans-serif;
     cursor: pointer;
-    -webkit-transition: background .3s ease-in-out;
-    -o-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    -webkit-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 table {
@@ -120,7 +123,7 @@ table {
 
 select {
     font-family: 'Pretendard', sans-serif;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 400;
     background: url(../img/select_arrows.png) no-repeat 95% 50%;
     -webkit-appearance: none;
@@ -135,78 +138,78 @@ select::-ms-expand {
 
 textarea {
     font-family: 'Pretendard', sans-serif;
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 400;
     color: #333;
 }
 
 textarea::-webkit-input-placeholder {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #333;
 }
 
 textarea:-moz-placeholder {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #333;
 }
 
 textarea::-moz-placeholder {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #333;
 }
 
 textarea:-ms-input-placeholder {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #333;
 }
 
 textarea::-ms-input-placeholder {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #333;
 }
 
 textarea::placeholder {
-    font-size: .875rem;
+    font-size: 0.875rem;
     font-weight: 300;
     color: #333;
 }
 
 @media all and (max-width: 376px) {
     select {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input::-webkit-input-placeholder {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input:-moz-placeholder {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input::-moz-placeholder {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input:-ms-input-placeholder {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input::-ms-input-placeholder {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     input::placeholder {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
     }
 
     textarea {
@@ -235,5 +238,59 @@ textarea::placeholder {
 
     textarea::placeholder {
         font-size: 0.8125rem;
+    }
+}
+
+@media all and (max-width: 321px) {
+    select {
+        font-size: 0.75rem;
+    }
+
+    input::-webkit-input-placeholder {
+        font-size: 0.75rem;
+    }
+
+    input:-moz-placeholder {
+        font-size: 0.75rem;
+    }
+
+    input::-moz-placeholder {
+        font-size: 0.75rem;
+    }
+
+    input:-ms-input-placeholder {
+        font-size: 0.75rem;
+    }
+
+    input::-ms-input-placeholder {
+        font-size: 0.75rem;
+    }
+
+    input::placeholder {
+        font-size: 0.75rem;
+    }
+
+    textarea::-webkit-input-placeholder {
+        font-size: 0.75rem;
+    }
+
+    textarea:-moz-placeholder {
+        font-size: 0.75rem;
+    }
+
+    textarea::-moz-placeholder {
+        font-size: 0.75rem;
+    }
+
+    textarea:-ms-input-placeholder {
+        font-size: 0.75rem;
+    }
+
+    textarea::-ms-input-placeholder {
+        font-size: 0.75rem;
+    }
+
+    textarea::placeholder {
+        font-size: 0.75rem;
     }
 }
